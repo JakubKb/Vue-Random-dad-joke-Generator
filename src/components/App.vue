@@ -5,19 +5,8 @@
 </template>
 <script>
 import component from "./component.vue";
-import axios from "axios";
-import { ref } from "vue";
+
 export default {
-  setup() {
-    const result = ref(null);
-
-    axios
-      .get("https://icanhazdadjoke.com/")
-      .then((data) => (result.value = data));
-
-    return { result };
-  },
-
   components: {
     component,
   },
@@ -81,3 +70,4 @@ button:hover {
   box-shadow: 0px 3px 39px 4px rgba(81, 255, 168, 1);
 }
 </style>
+le>
